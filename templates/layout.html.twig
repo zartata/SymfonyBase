@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block main_content %}
+{% embed 'decorator/_nav.html.twig' with {'class' :'fixed-top navbar-dark bg-dark', 'brandUrl': '#'} %}
+    {% block brand %}
+    Blog WebForce3
+    {% endblock %}
+
+    {% block menu %}
+    {{ knp_menu_render('main') }}
+    {% endblock %}
+{% endembed %}
+<div class="container">
+    {% block body %}
+    {% endblock %}
+</div>
+{% endblock %}

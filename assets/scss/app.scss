@@ -1,0 +1,17 @@
+/*$primary: #5ce0e0;*/
+@import "~bootswatch/dist/flatly/_variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid.scss";
+@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
+
+body {
+    padding-top: $nav-link-height + ($navbar-padding-y*2); 
+}
+
+fieldset.form-group {
+    legend {
+        border-bottom: 2px $primary solid;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}
